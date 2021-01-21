@@ -1,1 +1,1 @@
-# wifi_pass
+This python code extract all wifi passwords from your pc or Laptop
