@@ -5,7 +5,7 @@ lst_data=subprocess.check_output(['netsh','wlan','show','profiles']).decode("utf
 for i in lst_data:
 	if "All User Profile" in i:
 		x=i.split(":")[1][1:-1]
-		lst_profiles.append(x))
+		lst_profiles.append(x)
 for j in lst_profiles:
 	results=subprocess.check_output(['netsh','wlan','show','profiles',j,'key=clear']).decode("utf-8").split("\n")
 	for k in results:
